@@ -2,9 +2,10 @@ from PIL import Image
 import os
 
 # 图像组成：红绿蓝  （RGB）三原色组成    亮度（255,255,255）
-image = "C:\\Users\\丁\\Desktop\\帅.jpg"
+# 自己选择照片途径，再加\\依次读取途径
+image = "C:\\Users\\丁\\Desktop\\某某.jpg"  
 img = Image.open(image)
-img_all = "C:\\Users\\丁\\Desktop\\帅.jpg"
+img_all = "C:\\Users\\丁\\Desktop\\某某.jpg"
 new = Image.new("L", img.size, 255)
 width, height = img.size
 img = img.convert("L")
